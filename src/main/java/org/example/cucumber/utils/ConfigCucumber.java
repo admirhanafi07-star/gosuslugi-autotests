@@ -1,4 +1,4 @@
-package org.example.cucumber;
+package org.example.cucumber.utils;
 
 public class ConfigCucumber {
     public static final String PLATFORM_AND_BROWSER = "windows_chrome";
