@@ -73,5 +73,5 @@ logs/
 *.iml
 *.class
 test-output/
-allure-results/
+target/allure-results/
 allure-report/
