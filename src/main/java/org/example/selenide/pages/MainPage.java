@@ -3,13 +3,11 @@ package org.example.selenide.pages;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
-import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selenide.page;
+import static com.codeborne.selenide.Selenide.*;
 
 //// Главная страница сайта gosuslugi.ru
 public class MainPage {
@@ -26,7 +24,7 @@ public class MainPage {
         extensionLink.click();
         return page(LoginPage.class);  // "Создай мне новый объект LoginPage, инициализируй в нём все @FindBy поля и верни его."
     }
-
+//====================================================================================================================
     // Список (ссылки) всех элементов и их имена
     @FindBy(css = ".mr-24.ng-star-inserted")
     private List<SelenideElement> allElements;
@@ -46,8 +44,31 @@ public class MainPage {
         System.out.println("   Найдено элементов: " + texts2.size());
         List<String> texts3 = allElements.stream().map(e -> e.getText()).toList();
         System.out.println("   Тексты элементов: " + texts3);
+        return this;
+    }
+//====================================================================================================================
+    // Список (ссылки) всех href элементов и их имена
+    @FindBy(css = ".mr-24.ng-star-inserted")
+    private List<SelenideElement> allElementsHref;
 
+    public MainPage openRandomElementsHref(){
+        // Ждём загрузки страницы (появится хотя бы одна ссылка)
+        $$("a").shouldHave(sizeGreaterThan(0));
+        // Находим все элементы <a> на странице
+        ElementsCollection allLinks = $$("a");
+        System.out.println("📌 Всего найдено ссылок: " + allLinks.size());
         return this;
     }
 
+    public MainPage openRandomElementsHref2(){
+        // Ждём загрузки страницы (появится хотя бы одна ссылка)
+        $$("a").shouldHave(sizeGreaterThan(0));
+        // Создаём список для хранения href
+        List<String> allLinks = $$("a").stream().map(e -> e.getAttribute("href")).collect(Collectors.toList());
+        System.out.println(allLinks);
+        List<String> allLinks2 =allElementsHref.stream().map(e -> e.getAttribute("href")).collect(Collectors.toList());
+        System.out.println("Список всех href ссылок: " + allLinks2.size());
+
+        return this;
+    }
 }

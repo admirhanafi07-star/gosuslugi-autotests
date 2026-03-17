@@ -28,7 +28,7 @@ public class GosuslugiAutoTest extends BaseTest {
         }
 
         @Test
-        @DisplayName("🔐 Получить список элементов")
+        @DisplayName("🔐 Диагностика главной страницы")
         void test2() {
             System.out.println("\n🔍 ДИАГНОСТИКА СТРАНИЦЫ");
             System.out.println("══════════════════════════════════════════");
@@ -61,8 +61,17 @@ public class GosuslugiAutoTest extends BaseTest {
             mainPage.printAllElements();
         }
 
-
+        @Test
+        @DisplayName("🔐 Получить все ссылки главной страницы")
+        void test4() {
+            mainPage.openRandomElementsHref().openRandomElementsHref2();
+        }
     }
+
+
+
+
+
     @Nested
     @DisplayName("❌ Негативные тесты")
     @Tag("negative")
