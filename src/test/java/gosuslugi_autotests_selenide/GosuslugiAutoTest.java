@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.title;
 
@@ -24,47 +25,27 @@ public class GosuslugiAutoTest extends BaseTest {
     void test2() {
         System.out.println("\n🔍 ДИАГНОСТИКА СТРАНИЦЫ");
         System.out.println("══════════════════════════════════════════");
-
-        // 1. Текущий URL
-        System.out.println("📌 Текущий URL: " + WebDriverRunner.url());
-
-        // 2. Заголовок страницы
+        // 1. Заголовок страницы
         System.out.println("📌 Заголовок: " + title());
-
-        // 3. Количество iframe
-        System.out.println("📌 iframe на странице: " + $$("iframe").size());
-
-        // 4. Поиск элементов по разным селекторам
+        // 2. Поиск элементов по разным селекторам
         System.out.println("\n🔍 ПОИСК ЭЛЕМЕНТОВ:");
-
         // Поиск по тегу li
+        $$("li").shouldHave(sizeGreaterThan(0));
         int liCount = $$("li").size();
         System.out.println("📌 Всего li: " + liCount);
-
         // Поиск по классу mr-24
+        $$(".mr-24").shouldHave(sizeGreaterThan(0));
         int mr24Count = $$(".mr-24").size();
         System.out.println("📌 Элементов с классом mr-24: " + mr24Count);
-
         // Поиск по классу link-plain
+        $$(".link-plain").shouldHave(sizeGreaterThan(0));
         int linkPlainCount = $$(".link-plain").size();
         System.out.println("📌 Элементов с классом link-plain: " + linkPlainCount);
-
         // Поиск p.link-plain
+        $$("p.link-plain").shouldHave(sizeGreaterThan(0));
         int pLinkPlainCount = $$("p.link-plain").size();
         System.out.println("📌 p.link-plain: " + pLinkPlainCount);
 
-        // Если есть, вывести их текст
-        if (pLinkPlainCount > 0) {
-            List<String> texts = $$("p.link-plain").texts();
-            System.out.println("📌 Тексты: " + texts);
-        }
-
-        // 5. Проверка видимости
-        System.out.println("\n📌 Первые 5 элементов с классом mr-24:");
-        $$(".mr-24").first(5).forEach(el -> {
-            System.out.println("   → Видим: " + el.isDisplayed() +
-                    ", текст: " + el.getText());
-        });
     }
 
     @Test
