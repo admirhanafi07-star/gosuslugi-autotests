@@ -1,9 +1,8 @@
-package gosuslugi_autotests;
+package gosuslugi_autotests_selenium;
 
 import io.qameta.allure.Step;
-import org.example.gosuslugi_autotests.CommonActionsSelenium;
-import org.example.gosuslugi_autotests.MainPage;
-import org.junit.jupiter.api.AfterEach;
+import org.example.gosuslugi_selenium.CommonActionsSelenium;
+import org.example.gosuslugi_selenium.MainPage;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 

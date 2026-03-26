@@ -1,4 +1,4 @@
-package org.example.gosuslugi_autotests;
+package org.example.gosuslugi_selenium;
 
 public class Config {
     public static final String PLATFORM_AND_BROWSER = "windows_chrome";

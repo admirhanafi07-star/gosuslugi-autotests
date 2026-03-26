@@ -1,13 +1,13 @@
-package org.example.cucumber.pages;
+package org.example.gosuslugi_cucumber.pages;
 
-import org.example.cucumber.utils.ConfigCucumber;
+import org.example.gosuslugi_cucumber.utils.ConfigCucumber;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-import static org.example.gosuslugi_autotests.Config.PLATFORM_AND_BROWSER;
+import static org.example.gosuslugi_selenium.Config.PLATFORM_AND_BROWSER;
 
 public class CommonActionsSelenium {
 

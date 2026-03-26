@@ -1,4 +1,4 @@
-package org.example.cucumber.pages;
+package org.example.gosuslugi_cucumber.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

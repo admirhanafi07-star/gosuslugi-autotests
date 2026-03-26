@@ -1,4 +1,4 @@
-package org.example.cucumber;
+package org.example.gosuslugi_cucumber;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

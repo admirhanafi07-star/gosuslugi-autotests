@@ -1,4 +1,4 @@
-package org.example.gosuslugi_autotests;
+package org.example.gosuslugi_selenium;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

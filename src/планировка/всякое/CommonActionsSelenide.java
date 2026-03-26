@@ -1,4 +1,4 @@
-package org.example.cucumber;/*
+package org.example.gosuslugi_cucumber;/*
 package org.example.driver;
 
 import org.junit.jupiter.api.BeforeEach;

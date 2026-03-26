@@ -1,7 +1,6 @@
 package gosuslugi_autotests_selenide;
 
 import com.codeborne.selenide.WebDriverRunner;
-import org.example.selenide.pages.LoginPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Tag;

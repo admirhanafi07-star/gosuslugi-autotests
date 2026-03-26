@@ -2,9 +2,8 @@ package gosuslugi_autotests_cucumber.stepdefinitions;
 
 import gosuslugi_autotests_cucumber.Hooks;
 import io.cucumber.java.ru.*;
-import org.example.cucumber.pages.LoginPage;
+import org.example.gosuslugi_cucumber.pages.LoginPage;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.WebDriver;
 
 /**LoginSteps — используем Hooks.driver для создания LoginPage*/
 public class LoginSteps {

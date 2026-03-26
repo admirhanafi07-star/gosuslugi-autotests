@@ -1,4 +1,4 @@
-package org.example.cucumber;
+package org.example.gosuslugi_cucumber;
 
 
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.example.gosuslugi_autotests.Config.EXPLICIT_WAIT;
+import static org.example.gosuslugi_selenium.Config.EXPLICIT_WAIT;
 
 public class BasePageCucumber {
     protected WebDriver driver;

@@ -1,4 +1,4 @@
-package org.example.selenide.pages;
+package org.example.gosuslugi_selenide.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;

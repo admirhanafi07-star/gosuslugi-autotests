@@ -1,4 +1,4 @@
-package org.example.cucumber;
+package org.example.gosuslugi_cucumber;
 
 import ch.qos.logback.core.joran.sanity.Pair;
 import io.qameta.allure.Step;

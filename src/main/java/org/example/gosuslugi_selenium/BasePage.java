@@ -1,11 +1,11 @@
-package org.example.gosuslugi_autotests;
+package org.example.gosuslugi_selenium;
 
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import static org.example.gosuslugi_autotests.Config.EXPLICIT_WAIT;
+import static org.example.gosuslugi_selenium.Config.EXPLICIT_WAIT;
 
 public class BasePage {
     protected WebDriver driver;

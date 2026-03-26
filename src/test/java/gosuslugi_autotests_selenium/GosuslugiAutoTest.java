@@ -1,4 +1,4 @@
-package gosuslugi_autotests;
+package gosuslugi_autotests_selenium;
 
 import io.qameta.allure.*;
 import lombok.extern.slf4j.Slf4j;

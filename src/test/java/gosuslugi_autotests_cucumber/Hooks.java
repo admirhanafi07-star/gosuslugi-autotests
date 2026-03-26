@@ -1,10 +1,9 @@
 package gosuslugi_autotests_cucumber;
 
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 
-import static org.example.cucumber.pages.CommonActionsSelenium.createDriverCucumber;
+import static org.example.gosuslugi_cucumber.pages.CommonActionsSelenium.createDriverCucumber;
 
 /**создаём драйвер (ОДИН раз)*/
 public class Hooks {

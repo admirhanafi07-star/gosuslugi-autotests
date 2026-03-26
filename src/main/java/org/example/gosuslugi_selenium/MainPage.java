@@ -1,4 +1,4 @@
-package org.example.gosuslugi_autotests;
+package org.example.gosuslugi_selenium;
 
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;

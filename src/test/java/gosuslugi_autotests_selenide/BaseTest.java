@@ -1,10 +1,8 @@
 package gosuslugi_autotests_selenide;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
-import org.example.selenide.pages.LoginPage;
-import org.example.selenide.pages.MainPage;
-import org.junit.jupiter.api.AfterEach;
+import org.example.gosuslugi_selenide.pages.LoginPage;
+import org.example.gosuslugi_selenide.pages.MainPage;
 import org.junit.jupiter.api.BeforeEach;
 
 import static com.codeborne.selenide.Selenide.open;

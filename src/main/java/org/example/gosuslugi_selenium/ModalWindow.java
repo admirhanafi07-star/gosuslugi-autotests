@@ -1,4 +1,4 @@
-package org.example.gosuslugi_autotests;
+package org.example.gosuslugi_selenium;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;

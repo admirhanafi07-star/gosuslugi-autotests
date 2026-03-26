@@ -1,4 +1,4 @@
-package org.example.cucumber;
+package org.example.gosuslugi_cucumber;
 
 import io.qameta.allure.Step;
 import lombok.extern.slf4j.Slf4j;

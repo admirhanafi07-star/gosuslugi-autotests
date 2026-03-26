@@ -1,6 +1,6 @@
-package org.example.cucumber.pages;
+package org.example.gosuslugi_cucumber.pages;
 
-import org.example.cucumber.utils.ConfigCucumber;
+import org.example.gosuslugi_cucumber.utils.ConfigCucumber;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
