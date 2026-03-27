@@ -17,7 +17,6 @@ public class MainPage extends BasePage {
         return this;
     }
 
-    //====================================================================================================
     // ========== ВСЕ ЭЛЕМЕНТЫ МЕНЮ ==========
     public MainPage allLocator() {
         List<Locator> items = page.locator("ul li.mr-24").all();
