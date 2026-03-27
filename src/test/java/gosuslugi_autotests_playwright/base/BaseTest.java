@@ -10,15 +10,11 @@ import java.util.Scanner;
 
 abstract public class BaseTest extends BasePage {
 
-    protected static MainPage mainPage;  // ← Связываем через композицию
-
     @BeforeAll
     public static void setUpTest() {
         setUp();                                      // 1. Запускаем браузер
         openPage("https://www.gosuslugi.ru/");        // 2. Открываем страницу
         page.waitForLoadState(LoadState.NETWORKIDLE); // 3. Ждем полной загрузки
-
-        mainPage = new MainPage();  // 1 раз для всех тестов
     }
 
     @AfterAll

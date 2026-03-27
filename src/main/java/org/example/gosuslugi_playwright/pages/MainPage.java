@@ -79,4 +79,21 @@ public class MainPage extends BasePage {
         allTextServices();       // выводим название услуг
         return this;
     }
+    //====================================================================================================
+    // ========== ПЕРЕХОД НА СТРАНИЦУ РЕГИСТРАЦИИ ==========
+    public LoginPage registrationPage() {
+        page.getByText("Войти").click();
+        log.info("Переход на страницу регистрации осуществлён");
+        return new LoginPage();
+    }
+
+
+
+
+
+
+
+
+
+
 }
