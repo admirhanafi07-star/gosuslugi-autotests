@@ -1,8 +1,8 @@
-package org.example.gosuslugi_playwright.pages;
+package org.example.gosuslugi_playwright.wildberries.pages;
 
 import com.microsoft.playwright.Locator;
 import lombok.extern.slf4j.Slf4j;
-import org.example.gosuslugi_playwright.base.BasePage;
+import org.example.gosuslugi_playwright.wildberries.base.BasePage;
 
 @Slf4j
 public class LoginPage extends BasePage {

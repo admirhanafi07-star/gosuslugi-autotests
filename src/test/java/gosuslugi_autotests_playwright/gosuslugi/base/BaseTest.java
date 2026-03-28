@@ -1,8 +1,7 @@
-package gosuslugi_autotests_playwright.base;
+package gosuslugi_autotests_playwright.gosuslugi.base;
 
 import com.microsoft.playwright.options.LoadState;
-import org.example.gosuslugi_playwright.base.BasePage;
-import org.example.gosuslugi_playwright.pages.MainPage;
+import org.example.gosuslugi_playwright.gosuslugi.base.BasePage;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 

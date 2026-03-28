@@ -1,8 +1,8 @@
-package org.example.gosuslugi_playwright.pages;
+package org.example.gosuslugi_playwright.gosuslugi.pages;
 
 import com.microsoft.playwright.Locator;
 import lombok.extern.slf4j.Slf4j;
-import org.example.gosuslugi_playwright.base.BasePage;
+import org.example.gosuslugi_playwright.gosuslugi.base.BasePage;
 
 @Slf4j
 public class RegistrationPage extends BasePage {

@@ -1,13 +1,15 @@
-package gosuslugi_autotests_playwright.tests;
+package gosuslugi_autotests_playwright.wildberries.tests;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.LoadState;
-import gosuslugi_autotests_playwright.base.BaseTest;
+import gosuslugi_autotests_playwright.wildberries.base.BaseTest;
 import lombok.extern.slf4j.Slf4j;
-import org.example.gosuslugi_playwright.pages.LoginPage;
-import org.example.gosuslugi_playwright.pages.MainPage;
-import org.example.gosuslugi_playwright.pages.RegistrationPage;
-import org.junit.jupiter.api.*;
+import org.example.gosuslugi_playwright.gosuslugi.pages.MainPage;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
 import java.nio.file.Paths;
 
 @Slf4j

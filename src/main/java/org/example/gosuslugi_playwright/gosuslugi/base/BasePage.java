@@ -1,4 +1,4 @@
-package org.example.gosuslugi_playwright.base;
+package org.example.gosuslugi_playwright.gosuslugi.base;
 
 import com.microsoft.playwright.*;
 
